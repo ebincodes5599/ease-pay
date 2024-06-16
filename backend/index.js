@@ -1,6 +1,6 @@
 
 const dotenv=require('dotenv');
-const path =require('path');
+
 const express =require('express');
 const app = express();
 const connectDB = require('./db/db');
@@ -9,8 +9,6 @@ const cors =require('cors')
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
-
-const __dirname = path.dirname(__filename);
 
 dotenv.config();
 const PORT = process.env.PORT || 5000;
