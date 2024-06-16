@@ -23,7 +23,7 @@ export default function Signin() {
             }}
             label={"Username"}
             type={"email"}
-            placeholder={"Enter your email Id"}
+            placeholder={"Please enter your email Id"}
           />
           <InputBox
             onChange={(e) => {
@@ -31,7 +31,7 @@ export default function Signin() {
             }}
             label={"Password"}
             type={"password"}
-            placeholder={"Enter your password "}
+            placeholder={"Please enter your password "}
           />
           <div className="pt-6">
             <Button

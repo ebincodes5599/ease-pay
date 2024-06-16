@@ -1,13 +1,12 @@
 {
-  "name": "paytm",
+  "name": "easepay",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/index.js",
-    "develop": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm run dev\"",
-    "install": "cd backend && npm i && cd ../frontend && npm i",
-    "build": "cd frontend && npm run build"
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "ebin",
   "license": "ISC",
