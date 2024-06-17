@@ -4,8 +4,9 @@
   "description": "",
   "main": "backend/index.js",
   "scripts": {
+    "install": "npm install --prefix backend && npm install --prefix frontend",
     "server": "nodemon backend/index.js",
-    "start": "node backend/index.js",
+    "start": "concurrently \"npm run server\" \"npm run build:frontend\"",
     "build": "npm install && npm run build:frontend",
     "build:frontend": "npm install --prefix frontend && npm run build --prefix frontend"
   },
