@@ -24,12 +24,15 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/account/balance", {
-        headers: {
-          Accept: "*/*",
-          Authorization: "Bearer " + token,
-        },
-      })
+      .get(
+        "ease-rgxomelj9-ebins-projects-f2ebe0d7.vercel.app/api/v1/account/balance",
+        {
+          headers: {
+            Accept: "*/*",
+            Authorization: "Bearer " + token,
+          },
+        }
+      )
       .then((response) => {
         setValue(response.data.balance);
       });

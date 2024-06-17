@@ -55,7 +55,7 @@ export default function Signup() {
             <Button
               onClick={async () => {
                 const response = await axios.post(
-                  "http://localhost:3000/api/v1/user/signup",
+                  "ease-rgxomelj9-ebins-projects-f2ebe0d7.vercel.app/api/v1/user/signup",
                   {
                     firstName,
                     lastName,
