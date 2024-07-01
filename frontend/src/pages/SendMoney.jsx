@@ -23,7 +23,7 @@ export default function SendMoney() {
     // Perform the transfer
     try {
       const response = await axios.post(
-        "ease-rgxomelj9-ebins-projects-f2ebe0d7.vercel.app/api/v1/account/transfer",
+        "paybackend-nu.vercel.app/api/v1/account/transfer",
         {
           to: id,
           amount: amount,

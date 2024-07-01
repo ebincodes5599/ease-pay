@@ -25,7 +25,7 @@ export default function Signup() {
             }}
             label={"First Name"}
             type={"text"}
-            placeholder={"Plaese enter your first name"}
+            placeholder={"John"}
           />
           <InputBox
             onChange={(e) => {
@@ -33,7 +33,7 @@ export default function Signup() {
             }}
             label={"Last Name"}
             type={"text"}
-            placeholder={"Plaese enter your second name"}
+            placeholder={"Doe"}
           />
           <InputBox
             onChange={(e) => {
@@ -41,7 +41,7 @@ export default function Signup() {
             }}
             label={"Username"}
             type={"text"}
-            placeholder={"Plaese enter your Email Id"}
+            placeholder={"Enter your Username"}
           />
           <InputBox
             onChange={(e) => {
@@ -49,13 +49,13 @@ export default function Signup() {
             }}
             label={"Password"}
             type={"password"}
-            placeholder={"Plaese enter your password "}
+            placeholder={"Enter your password "}
           />
           <div className="pt-6">
             <Button
               onClick={async () => {
                 const response = await axios.post(
-                  "ease-rgxomelj9-ebins-projects-f2ebe0d7.vercel.app/api/v1/user/signup",
+                  "https://paybackend-mzxu8n3en-ebins-projects-f2ebe0d7.vercel.app//api/v1/user/signup",
                   {
                     firstName,
                     lastName,

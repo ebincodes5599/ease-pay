@@ -1,20 +1,27 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 const express = require('express');
-const app = express();
-const path = require('path');
+const cors = require('cors');
+const dotenv = require('dotenv');
+
 const connectDB = require('./db/db');
 const rootRouter = require('./routes');
-const cors = require('cors');
+// Example in index.js
+const util = require('node:util');
+const path = require('node:path');
+const fs = require('node:fs');
 
-// Set Port
+
+dotenv.config();
+
+const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middlewares
+// Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+
+// Configure CORS
+
+app.use(cors({origin:true}))
 
 // Routes
 app.use('/api/v1/', rootRouter);
