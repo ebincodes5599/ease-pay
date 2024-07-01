@@ -1,13 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-
+const path = require('path');
 const connectDB = require('./db/db');
 const rootRouter = require('./routes');
-// Example in index.js
-const util = require('node:util');
-const path = require('node:path');
-const fs = require('node:fs');
+
 
 
 dotenv.config();
