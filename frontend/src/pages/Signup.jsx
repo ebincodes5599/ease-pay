@@ -55,7 +55,7 @@ export default function Signup() {
             <Button
               onClick={async () => {
                 const response = await axios.post(
-                  "https://ease-pay-3w3m.vercel.app/api/v1/user/signup",
+                  "https://ease-pay-1.onrender.com/api/v1/user/signup",
                   {
                     firstName,
                     lastName,
